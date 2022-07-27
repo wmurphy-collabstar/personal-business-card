@@ -1,0 +1,106 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.avatar {
+    width: 150px;
+    border: 5px solid #E76F51;
+    border-radius: 100%;
+    box-shadow: -5px 7px 25px #E9C46A;
+}
+
+@keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+.avatar:hover {
+    animation: rotate-in-2-cw 2s;
+}
+
+.info {
+    margin-top: 5%;
+    text-shadow: 2px 2px 5px black;
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+.info:hover {
+    animation: scale-up-center 1s 1 forwards;
+    text-shadow: 4px 4px 15px black;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    background: #264653;
+    color: #E9C46A;
+    border: 6px solid #2A9D8F;
+    border-radius: 10px;
+    animation: rotate-scale-up 2s;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(0) rotateZ(0);
+            transform: scale(0) rotateZ(0);
+  }
+  /* 50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  } */
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
