@@ -1,4 +1,5 @@
-# Personal Business Card (what I want it to be)
+# Personal Business Card
+You can check it out here: https://wmurphy-collabstar.github.io/personal-business-card/
 
 ## About Scrimba
 
